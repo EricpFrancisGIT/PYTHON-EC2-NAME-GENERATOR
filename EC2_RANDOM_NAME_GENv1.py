@@ -9,6 +9,7 @@ def generate_unique_name(length=7):
 #Main Script
 def main():
     print('Welcome to the Level-Up Corporation Instance Name Generator!')
+    print('----------------FOR AUTHORIZED DEPARTMENTS ONLY----------------')
     
     num_instances = (input("How many instances do you need names for?")).strip()
     try:
@@ -22,7 +23,7 @@ def main():
 
     department = str(input('Please state the name of the departmant(Marketing Dept, Accounting Dept, Fin-Ops Dept)'))
 
-    acceptable_departments = ["Marketing", "Accounting", "FinOps"]
+    acceptable_departments = ["Marketing", "Accounting", "Fin-Ops"]
     if department not in acceptable_departments:
         print('Error, Your department is not authorized to use this Name Generator!')
         return
